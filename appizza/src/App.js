@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Layout from './containers/Layout/Layout';
-import PizzaBuilder from './components/pizzaBuilder/PizzaBuilder';
+import Layout from './components/Layout/Layout';
+import PizzaBuilder from './containers/pizzaBuilder/PizzaBuilder';
 
 function App() {
     return (
