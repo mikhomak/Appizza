@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PizzaContainer from '../../components/pizza/PizzaContainer';
+import PizzaContainer from '../../components/pizzaContainer/PizzaContainer';
 import Aux from '../../hoc/Aux';
 
 class PizzaBuilder extends Component {

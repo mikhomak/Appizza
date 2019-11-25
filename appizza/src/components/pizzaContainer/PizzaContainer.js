@@ -1,5 +1,6 @@
 import React from 'react';
 import PizzaControls from './pizzaControls/PizzaControls';
+import Pizza from './pizza/Pizza';
 import classes from './PizzaContainer.module.css';
 
 const pizzaContainer = (props) => {
@@ -11,7 +12,7 @@ const pizzaContainer = (props) => {
     return (
         <div className={classes.PizzaContainer}>
             <PizzaControls controls={firstControls}/>
-            <div><p>pizza</p></div>
+            <Pizza/>
             <PizzaControls controls={secondControls}/>
         </div>
     );
