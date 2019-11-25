@@ -11,7 +11,7 @@ const pizzaContainer = (props) => {
     return (
         <div className={classes.PizzaContainer}>
             <PizzaControls controls={firstControls}/>
-            <p>pizza</p>
+            <div><p>pizza</p></div>
             <PizzaControls controls={secondControls}/>
         </div>
     );

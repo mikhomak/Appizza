@@ -1,5 +1,12 @@
-.PizzaContainer{
+.PizzaContainer {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+    .PizzaContainer {
+        flex-direction: column;
+    }
+    .PizzaContainer :nth-child(1) { order: 1;}
 }
