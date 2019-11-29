@@ -3,6 +3,10 @@ import classes from './Pizza.module.css';
 import Aux from '../../../hoc/Aux';
 
 const pizza = (props) => {
+
+
+
+
     return (
         <Aux>
             <div className={classes.Pizza}>

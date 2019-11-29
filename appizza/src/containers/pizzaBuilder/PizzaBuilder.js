@@ -5,8 +5,14 @@ import Aux from '../../hoc/Aux';
 class PizzaBuilder extends Component {
 
     state = {
-        ingredients:[1,2,3,4]
-    }
+        ingredients:[1,2,3,4],
+        ingredients1: {
+            tomato: 0,
+            pineapple: 0,
+            mushroom: 0,
+            spinach: 0
+        }
+    };
 
     render() {
         return (<Aux>
