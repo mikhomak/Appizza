@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PizzaIngredient from './pizzaIngredient/PizzaIngredient';
 
 const positions = {
     tomato: [
@@ -31,7 +31,13 @@ const positions = {
 const pizzaTypes = (props) => {
 
     let posX, posY;
-    return <PizzaIngredient style={{}}/>
+    posX = positions[props.type][props.position].posX + '%';
+    posY = positions[props.type][props.position].posY + '%';
+    const style ={
+        top: posX.toString(),
+        left: posY.toString()
+    };
+    return <PizzaIngredient style={style}/>
 
 };
 
