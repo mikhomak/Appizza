@@ -2,7 +2,7 @@ import React from 'react';
 import PizzaControl from './pizzaControl/PizzaControl';
 
 const pizzaControls = (props) => {
-    const controls = props.controls.map(control =><PizzaControl key={control}/>);
+    const controls = props.controls.map(control => <PizzaControl key={control} type={control}/>);
 
     return (
         <div>

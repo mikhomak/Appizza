@@ -2,22 +2,22 @@ import React from 'react';
 import classes from './PizzaIngredient.module.css';
 
 const pizzaIngredient = (props) => {
-    let ingredient = <div></div>;
+    let ingredient = <div/>;
     switch (props.type) {
         case('tomato'):
-            ingredient = <div className={classes.Tomato}></div>
+            ingredient = <div className={classes.Tomato}/>;
             break;
         case('mushroom'):
-            ingredient = <div className={classes.Mushroom}></div>
+            ingredient = <div className={classes.Mushroom}/>;
             break;
         case('spinach'):
-            ingredient = <div className={classes.Spinach}></div>
+            ingredient = <div className={classes.Spinach}/>;
             break;
         case('pineapple'):
-            ingredient = <div className={classes.Pineapple}></div>
+            ingredient = <div className={classes.Pineapple}/>;
             break;
         default:
-            ingredient = <div></div>
+            ingredient = <div/>;
             break;
     }
     return ingredient;
