@@ -4,8 +4,15 @@ import PizzaControl from './pizzaControl/PizzaControl';
 const pizzaControls = (props) => {
     const controls = props.controls.map(control => <PizzaControl key={control} type={control}/>);
 
+    const style ={
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between"
+    };
+
+
     return (
-        <div>
+        <div style={style}>
             {controls}
         </div>
     );
