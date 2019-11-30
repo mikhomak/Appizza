@@ -5,3 +5,27 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+.Mushroom{
+    height: 100px;
+    width: 100px;
+    background-color: #714415;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.Spinach{
+    height: 100px;
+    width: 100px;
+    background-color: #368711;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.Pineapple{
+    height: 100px;
+    width: 100px;
+    background-color: #a29a1b;
+    border-radius: 50%;
+    display: inline-block;
+}
