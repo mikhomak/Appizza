@@ -14,9 +14,24 @@ class PizzaBuilder extends Component {
         controls: ['tomato', 'pineapple', 'mushroom', 'spinach']
     };
 
+
+    addIngredientHandler = (ingredient) => {
+        console.log(ingredient);
+        const oldIngredient = this.state.ingredients[ingredient];
+        const newIngredients = {
+            ...this.state.ingredients
+        };
+        newIngredients[ingredient] = oldIngredient + 1;
+        this.setState({ingredients:newIngredients});
+    };
+
     render() {
         return (<Aux>
-            <PizzaContainer ingredients={this.state.ingredients} controls={this.state.controls}/>
+            <PizzaContainer
+                ingredients={this.state.ingredients}
+                controls={this.state.controls}
+                addIngredient={this.addIngredientHandler}
+            />
         </Aux>);
     }
 }

@@ -8,8 +8,8 @@ const pizzaControl = (props) => {
         <Aux>
             <PizzaIngredient type={props.type}/>
             <div className={classes.ButtonContainer}>
-                <button className={classes.button}>-</button>
-                <button className={classes.button}>+</button>
+                <button  className={classes.button}>-</button>
+                <button onClick={()=>props.addIngredient(props.type)} className={classes.button}>+</button>
             </div>
         </Aux>
     );

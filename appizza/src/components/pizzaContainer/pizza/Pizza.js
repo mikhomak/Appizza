@@ -5,7 +5,7 @@ import PizzaTypes from './pizzaTypes/PizzaTypes';
 
 const pizza = (props) => {
 
-    let transformedIngredients = Object.keys(props.ingredients)
+    /*let transformedIngredients = Object.keys(props.ingredients)
         .map(igKey => {
             return [...Array(props.ingredients[igKey])]
                 .map((_, i) => {
@@ -13,7 +13,7 @@ const pizza = (props) => {
                 });
         }).reduce((arr, el) => {
             return arr.concat(el);
-        }, []);
+        }, []);*/
 
 
     return (
@@ -24,7 +24,6 @@ const pizza = (props) => {
                 <div className={classes.DoughTwo}/>
                 <div className={classes.DoughThree}/>
                 <div className={classes.DoughFour}/>
-                {transformedIngredients}
             </div>
         </Aux>
 
