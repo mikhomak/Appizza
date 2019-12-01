@@ -29,6 +29,11 @@
     transform: scale(.98);
 }
 
+.button:disabled{
+    background: #9e917b;
+    cursor: not-allowed;
+}
+
 @keyframes pulse {
     0% {
         transform: scale(1, 1);

@@ -11,9 +11,9 @@ const pizzaContainer = (props) => {
 
     return (
         <div className={classes.PizzaContainer}>
-            <PizzaControls controls={firstControls} addIngredient={props.addIngredient} removeIngredient={props.removeIngredient}/>
+            <PizzaControls controls={firstControls} addIngredient={props.addIngredient} removeIngredient={props.removeIngredient} buttonStates={props.buttonStates}/>
             <Pizza ingredients={props.ingredients}/>
-            <PizzaControls controls={secondControls} addIngredient={props.addIngredient} removeIngredient={props.removeIngredient}/>
+            <PizzaControls controls={secondControls} addIngredient={props.addIngredient} removeIngredient={props.removeIngredient} buttonStates={props.buttonStates}/>
         </div>
     );
 
