@@ -4,7 +4,8 @@ import PizzaControl from './pizzaControl/PizzaControl';
 const pizzaControls = (props) => {
 
     const controls = props.controls.map(control => <PizzaControl key={control} type={control}
-                                                                 addIngredient={props.addIngredient}/>);
+                                                                 addIngredient={props.addIngredient}
+                                                                 removeIngredient={props.removeIngredient}/>);
 
     const style = {
         display: "flex",

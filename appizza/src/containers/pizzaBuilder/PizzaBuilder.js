@@ -15,6 +15,8 @@ const canBePut = (ingredient, amount) => {
     return maxIngredients[ingredient] >= amount;
 };
 
+const isNotEmpty = amount => amount >= 0;
+
 class PizzaBuilder extends Component {
 
     state = {
@@ -39,6 +41,18 @@ class PizzaBuilder extends Component {
         }
     };
 
+    removeIngredientHandler = (ingredient) => {
+        const oldIngredient = this.state.ingredients[ingredient];
+        const newIngredients = {
+            ...this.state.ingredients
+        };
+        if (isNotEmpty( oldIngredient - 1)) {
+            newIngredients[ingredient] = oldIngredient - 1;
+            this.setState({ingredients: newIngredients});
+        }
+
+    };
+
 
     render() {
         return (
@@ -47,6 +61,7 @@ class PizzaBuilder extends Component {
                     ingredients={this.state.ingredients}
                     controls={this.state.controls}
                     addIngredient={this.addIngredientHandler}
+                    removeIngredient={this.removeIngredientHandler}
                 />
             </Aux>
         );
