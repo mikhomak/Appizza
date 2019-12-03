@@ -26,7 +26,7 @@
 }
 
 .button:active{
-    transform: scale(.98);
+    transform: scale(.95);
 }
 
 .button:disabled{
