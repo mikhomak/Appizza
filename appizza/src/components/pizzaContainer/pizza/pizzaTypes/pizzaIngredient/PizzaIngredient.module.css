@@ -4,6 +4,17 @@
     background-color: #bd1a18;
     border-radius: 50%;
     display: inline-block;
+
+}
+.Tomato::before{
+    height: 120px;
+    width: 120px;
+    content:"";
+    border-radius: 50%;
+    background-color: #640007;
+    position: absolute;
+    transform: translateX(-60px) translateY(-10px);
+    z-index: -5;
 }
 
 .Mushroom {
