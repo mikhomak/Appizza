@@ -6,12 +6,21 @@
     display: inline-block;
 }
 
-.Mushroom{
-    height: 100px;
+.Mushroom {
+    height: 40px;
     width: 100px;
-    background-color: #714415;
-    border-radius: 50%;
-    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 0 0 30% 30%;
+    box-shadow:9px 11px 43px -6px rgba(0,0,0,0.51);
+}
+.Mushroom::after{
+    content:"";
+    position: absolute;
+    background-color: #b54c02;
+    border-radius: 30% 30% 0 0;
+    width: 130px;
+    height: 50px;
+    transform: translateX(-65px) translateY(-50px);
 }
 
 .Spinach{
