@@ -16,13 +16,13 @@ const positions = {
     ],
     spinach: [
         {posX: 32, posY: 50},
-        {posX: 78, posY: 53},
+        {posX: 60, posY: 20},
         {posX: 20, posY: 5}
     ],
     pineapple: [
         {posX: 15, posY: 60},
         {posX: 65, posY: 45},
-        {posX: 45, posY: 80},
+        {posX: 45, posY: 70},
         {posX: 32, posY: 7},
         {posX: 5, posY: 22}
     ]
