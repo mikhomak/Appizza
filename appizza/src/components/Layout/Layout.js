@@ -4,7 +4,7 @@ import classes from './Layout.module.css';
 
 const layout = (props) => (
     <Aux>
-        <div> Pages</div>
+        <div style={{margin: '10px'}}> Pizza Builder</div>
         <main className={classes.Layout}>
             {props.children}
         </main>
