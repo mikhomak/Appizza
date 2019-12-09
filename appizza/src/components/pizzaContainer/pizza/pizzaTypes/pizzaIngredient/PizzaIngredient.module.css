@@ -38,14 +38,33 @@
     height: 100px;
     width: 100px;
     background-color: #368711;
-    border-radius: 50%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     display: inline-block;
 }
 
+.Spinach::after{
+    content: "";
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    transform: translateX(-5px) translateY(0px);
+    background-color: #2d700e;
+    border-radius: 70% 70% 0 0;
+}
+
 .Pineapple{
-    height: 100px;
-    width: 100px;
-    background-color: #a29a1b;
-    border-radius: 50%;
+    height: 40px;
+    width: 80px;
     display: inline-block;
+    border: 10px solid transparent;
+    border-bottom: 20px solid #F3FF00;
+}
+
+.Pineapple:after {
+    content:"";
+    position: absolute;
+    border: 50px solid transparent;
+    border-top: 70px solid #F3FF00;
+    transform: translateX(-50px) translateY(60px);
+
 }
