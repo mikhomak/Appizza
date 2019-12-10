@@ -1,15 +1,16 @@
-.Tomato{
+.Tomato {
     height: 100px;
     width: 100px;
     background-color: #bd1a18;
     border-radius: 50%;
     display: inline-block;
-
+    box-shadow: 9px 11px 43px -6px rgba(0, 0, 0, 0.51);
 }
-.Tomato::before{
+
+.Tomato::before {
     height: 120px;
     width: 120px;
-    content:"";
+    content: "";
     border-radius: 50%;
     background-color: #640007;
     position: absolute;
@@ -22,10 +23,11 @@
     width: 100px;
     background-color: #ffffff;
     border-radius: 0 0 30% 30%;
-    box-shadow:9px 11px 43px -6px rgba(0,0,0,0.51);
+    box-shadow: 9px 11px 43px -6px rgba(0, 0, 0, 0.51);
 }
-.Mushroom::after{
-    content:"";
+
+.Mushroom::after {
+    content: "";
     position: absolute;
     background-color: #b54c02;
     border-radius: 30% 30% 0 0;
@@ -34,15 +36,16 @@
     transform: translateX(-65px) translateY(-50px);
 }
 
-.Spinach{
+.Spinach {
     height: 100px;
     width: 100px;
     background-color: #368711;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     display: inline-block;
+    box-shadow: 9px 11px 43px -6px rgba(0, 0, 0, 0.51);
 }
 
-.Spinach::after{
+.Spinach::after {
     content: "";
     width: 10px;
     height: 150px;
@@ -52,7 +55,7 @@
     border-radius: 70% 70% 0 0;
 }
 
-.Pineapple{
+.Pineapple {
     height: 40px;
     width: 80px;
     display: inline-block;
@@ -61,10 +64,9 @@
 }
 
 .Pineapple:after {
-    content:"";
+    content: "";
     position: absolute;
     border: 50px solid transparent;
     border-top: 70px solid #F3FF00;
     transform: translateX(-50px) translateY(60px);
-
 }
